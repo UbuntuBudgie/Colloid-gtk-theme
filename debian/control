@@ -1,0 +1,22 @@
+Source: colloid-gtk-theme
+Section: misc
+Priority: optional
+Maintainer: Samuel Lane <samlane00@gmail.com>
+Build-Depends: debhelper-compat (= 13), sassc
+Standards-Version: 4.6.2
+Homepage: https://github.com/vinceliuice/Colloid-gtk-theme
+Vcs-Git: https://github.com/UbuntuBudgie/Colloid-gtk-theme -b debian
+Vcs-Browser: https://github.com/UbuntuBudgie/Colloid-gtk-theme/tree/debian
+
+
+Package: colloid-gtk-theme
+Architecture: all
+Depends: gnome-themes-extra,
+	gtk2-engines-murrine,
+	libgtk-3-common,
+	libgtk2.0-common,
+	${misc:Depends}
+Description: Colloid theme for GNOME/GTK+ based desktop environments
+ Colloid theme (rimless compact version) for GNOME/GTK+ based desktop
+ environments. It supports GTK+ 3, GTK+ 2, GNOME Shell, Budgie, MATE,
+ Unity, LightDM, GDM, etc.

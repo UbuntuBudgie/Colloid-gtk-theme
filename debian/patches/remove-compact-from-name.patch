@@ -1,0 +1,18 @@
+Description: Remove -Compact from theme name
+ Remove "-Compact" from the theme name and install path to simplify
+ the name of the version being installed
+Author: Samuel Lane <samlane00@gmail.com>
+Last-Update: 2023-10-23
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/install.sh
++++ b/install.sh
+@@ -26,7 +26,7 @@
+ THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
+ SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Gruvbox')
+ COLOR_VARIANTS=('' '-Light' '-Dark')
+-SIZE_VARIANTS=('' '-Compact')
++SIZE_VARIANTS=('' '')
+
+ if [[ "$(command -v gnome-shell)" ]]; then
+   gnome-shell --version
