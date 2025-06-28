@@ -4,5 +4,5 @@
 	dh $@
 
 override_dh_install:
-	--size standard compact --theme all --tweaks rimless normal all -dest $(CURDIR)/debian/colloid-gtk-theme/usr/share/themes
+	./install.sh --size standard compact --theme all --tweaks rimless normal catppuccin --dest $(CURDIR)/debian/colloid-gtk-theme/usr/share/themes
 	find $(CURDIR)/debian/colloid-gtk-theme/usr/share/themes -name COPYING -delete
